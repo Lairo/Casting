@@ -14,9 +14,28 @@ namespace Casting
             byte myByte = (byte)myInt;
             double myDouble = (double)myByte;
             char myChar = 'v';
-            myString = (int)(myString + myInt + myByte + myDouble + myChar);
+            myString = (int)(myString + myInt + myByte + myDouble + myChar);            
 
-            Console.WriteLine($"\n{myString}\n");
+            //Console.WriteLine($"\n{myString}\n");
+
+
+            Count();
+        }
+
+        private static void Count()
+        {
+            Console.Write("x: ");
+            string xString = Console.ReadLine();
+            int.TryParse(xString, out int x);
+
+
+            Console.Write("\ny: ");
+            string yString = Console.ReadLine();
+            int.TryParse(yString, out int y);
+                        
+            float z = (float)x / y;
+
+            Console.WriteLine($"\nx / y = z: {z}\n");
 
         }
     }
