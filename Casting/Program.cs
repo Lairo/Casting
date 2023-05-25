@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Casting
 {
@@ -19,8 +15,6 @@ namespace Casting
             double myDouble = (double)myByte;
             char myChar = 'v';
             myString = (int)(myString + myInt + myByte + myDouble + myChar);
-
-
 
             Console.WriteLine($"\n{myString}\n");
 
