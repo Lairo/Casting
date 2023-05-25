@@ -19,10 +19,10 @@ namespace Casting
             //Console.WriteLine($"\n{myString}\n");
 
 
-            Count();
+            Division();
         }
 
-        private static void Count()
+        private static void Division()
         {
             Console.Write("x: ");
             string xString = Console.ReadLine();
